@@ -1,11 +1,17 @@
 ﻿namespace HotelListing.Api.DTOs.Hotel
 {
-    public record GetHotelDto
-    (
+    public record GetHotelDto(
         int Id,
         string Name,
         string Address,
         double Rating,
-        string Country
+        int CountryId,
+        string Country);
+
+    public record GetHotelSlimDto(
+        int Id,
+        string Name,
+        string Address,
+        double Rating
     );
 }
